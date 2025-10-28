@@ -1,0 +1,22 @@
+# 加密货币网络分析系统依赖包 - 无Java版本
+# 基于IDTxl的Python原生估计器，无需Java环境
+
+# 核心依赖
+idtxl>=1.6
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# 数据处理
+requests>=2.25.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# 注意：不需要以下依赖
+# jpype1  # Java接口，本版本不需要
+# pyopencl  # GPU加速，可选
+# mpi4py   # MPI并行计算，可选
+
+# 开发和测试
+pytest>=6.0.0
+jupyter>=1.0.0

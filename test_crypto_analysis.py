@@ -71,6 +71,7 @@ def test_analyzer_with_synthetic_data():
         'time_hours': 24,
         'correlation_threshold': 0.5,
         'te_threshold': 0.05,
+        'cmi_estimator': 'JidtKraskovCMI',  # 使用Kraskov CMI估计器
         'n_perm_max_stat': 20,  # 减少置换次数以加快测试
         'n_perm_min_stat': 20,
         'n_perm_omnibus': 50,
@@ -152,7 +153,7 @@ def test_performance():
             from idtxl.multivariate_te import MultivariateTE
             network_analysis = MultivariateTE()
             settings = {
-                'cmi_estimator': 'JidtGaussianCMI',
+                'cmi_estimator': 'JidtKraskovCMI',
                 'max_lag_sources': 5,
                 'min_lag_sources': 1,
                 'max_lag_target': 3,
